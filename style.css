@@ -1,0 +1,85 @@
+.threeColumnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.threeColumns {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  border: none;
+  border-radius: 10px;
+}
+
+.column1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 50px;
+}
+
+.column2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 50px;
+}
+
+.column3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 50px;
+}
+
+img {
+  margin-bottom: 15px;
+}
+
+.titles {
+  font-family: "Big Shoulders Display";
+  color: white;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.descriptions {
+  color: white;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  margin-bottom: 115px;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  background-color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.sedanButton {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvButton {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxuryButton {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 1163px) {
+  .threeColumns {
+    flex-direction: column;
+    text-align: center;
+  }
+  .titles {
+    font-size: 2.5em;
+  }
+  .descriptions {
+    font-size: 20px;
+  }
+}
